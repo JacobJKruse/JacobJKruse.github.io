@@ -1,0 +1,50 @@
+import React from 'react'
+import { Backend_skill, Frontend_skill, Full_stack, Other_skill } from '../../../../constants'
+import SkillDataProvider from './sub/SkillDataProvider'
+import SkillText from './sub/SkillText'
+
+const Skills = () => {
+  return (
+    <section className='flex flex-col items-center justify-center gap-3 h-full relative  py-20 md:py-10'
+    style={{transform: "scale(0.9)"}}>
+      <SkillText />
+        <div className="w-full h-full absolute z-[-1]">
+        
+            <div className="w-full h-full opacity-30  flex items-center justify-center bg-cover">
+                <video
+                    className="w-full h-auto"
+                    style={{ objectFit: 'cover' }}
+                    preload="false"
+                    playsInline
+                    loop
+                    muted
+                    autoPlay
+                    src="/cards-video.webm"
+                />
+            </div>
+        </div>
+        <div className='flex flex-col md:flex-row justify-around flex-wrap mt-4 gap-5 items-center z-10'>
+            {Frontend_skill.map((image,index) => (
+                <SkillDataProvider src= {image.Image} key = {index} width= {image.width} height={image.height} index={index}/>
+            ))}
+        </div>
+        <div className='flex flex-col md:flex-row justify-around flex-wrap mt-4 gap-5 items-center z-10'>
+            {Backend_skill.map((image,index) => (
+                <SkillDataProvider src= {image.Image} key = {index} width= {image.width} height={image.height} index={index}/>
+            ))}
+        </div>
+        <div className='flex flex-col md:flex-row justify-around flex-wrap mt-4 gap-5 items-center z-10'>
+            {Full_stack.map((image,index) => (
+                <SkillDataProvider src= {image.Image} key = {index} width= {image.width} height={image.height} index={index}/>
+            ))}
+        </div>
+        {/* <div className='flex flex-col md:flex-row justify-around flex-wrap mt-4 gap-5 items-center z-10'>
+            {Other_skill.map((image,index) => (
+                <SkillDataProvider src= {image.Image} key = {index} width= {image.width} height={image.height} index={index}/>
+            ))}
+        </div> */}
+    </section>
+  )
+}
+
+export default Skills
