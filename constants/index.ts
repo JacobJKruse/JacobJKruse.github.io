@@ -66,14 +66,17 @@ export const Skill_data = [
     {
       name: "Github",
       src: "/gitwhite.png",
+      url: "https://github.com/JacobJKruse"
     },
     {
       name: "Linkedin",
       src: "/linkedinicon.png",
+      url: "https://www.linkedin.com/in/jacobjkruse/"
     },
     {
       name: "discord",
       src: "/discord.svg",
+      url: ""
     },
   ];
   
