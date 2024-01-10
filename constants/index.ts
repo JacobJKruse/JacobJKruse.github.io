@@ -227,4 +227,27 @@ export const Skill_data = [
     },
   ];
   
+
+  export const NavLinks = [
+    {
+      name: "Home",
+      link: "/",
+    },
+    {
+      name: "About me",
+      link: "/about-me",
+    },
+    {
+      name: "Projects",
+      link: "/my-projects",
+    },
+    {
+      name: "Project 1",
+      link: "/my-projects/project1",
+    },
+    {
+      name: "Project 2",
+      link: "/my-projects/project2",
+    },
+  ];
   
