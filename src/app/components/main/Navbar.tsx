@@ -83,9 +83,15 @@ const Navbar = () => {
 
         {isOpen && (
           <div className="absolute top-[65px] right-0 w-48 py-2 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10 rounded-lg">
-            <a href="#about-me" className="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">About me</a>
-            <a href="#resume" className="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Resume</a>
-            <a href="#projects" className="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Projects</a>
+           {NavLinks.filter(link => ["Home", "About me", "Projects"].includes(link.name)).map((link) => 
+              <Link
+              key={link.name}
+              href={link.link}
+              onClick={() => setisActive(link.name)}
+              >
+                <p  className="cursor-pointer">{link.name}</p>
+              </Link>
+              )}
           </div>
         )}
 

@@ -1,6 +1,11 @@
+"use client"
+import React, { useState } from "react";
 import ProjectCard from "../components/main/sub/ProjectCard";
+import Link from 'next/link'; // import the Link component
 
 const MyProjects = () => {
+  const [isActive, setIsActive] = useState('');
+
   const projects = [
     {
       src: "/NextWebsite.png",
@@ -14,23 +19,12 @@ const MyProjects = () => {
       description: "This is Project 2.",
       link: "/my-projects/project2/page",
     },
-    {
-      src: "/NextWebsite.png",
-      title: "Project 2",
-      description: "This is Project 2.",
-      link: "/my-projects/project2/page",
-    },
-    {
-      src: "/NextWebsite.png",
-      title: "Project 2",
-      description: "This is Project 2.",
-      link: "/my-projects/project2/page",
-    },
+  
     // Add more projects here...
   ];
 
   return (
-    <div className="p-4 md:p-10 lg:p-20 z-[30]">
+    <div className="p-4 md:p-10 lg:p-20 ">
       <div
         className="flex flex-col items-center justify-center py-20"
         id="projects"
@@ -40,13 +34,16 @@ const MyProjects = () => {
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {projects.map((project) => (
-            <a href={project.link} key={project.title}>
-              <ProjectCard
-                src={project.src}
-                title={project.title}
-                description={project.description}
-              />
-            </a>
+            <Link href={project.link} key={project.title}> {/* use Link here */}
+             
+                <ProjectCard
+                  src={project.src}
+                  title={project.title}
+                  description={project.description}
+                  link={project.link}
+                />
+            
+            </Link>
           ))}
         </div>
       </div>
