@@ -67,7 +67,7 @@ export const HeroContent = () => {
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
           I&apos;m a Full Stack Software Devloper with experience in Websites,
-          Mobile, and Software development. Check out my projects and skills.
+          Mobile, and application development. Explore my website I made using Next.Js to learn more about me.
         </motion.p>
         <motion.a
           variants={slideInFromLeft(1)}
