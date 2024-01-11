@@ -9,7 +9,7 @@ const Hero = () => {
   muted
   loop
   className="absolute top-0 h-full w-full left-0 z-[1] object-cover"
-  style={{ objectFit: 'cover', transform: 'translateY(-40%) rotate(180deg)' }}
+  style={{ objectFit: 'cover', transform: 'translateY(-45%) rotate(180deg)' }}
 >
   <source src="/blackhole.webm" type="video/webm" />
 </video>
