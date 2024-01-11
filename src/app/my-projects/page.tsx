@@ -8,16 +8,16 @@ const MyProjects = () => {
 
   const projects = [
     {
-      src: "/NextWebsite.png",
-      title: "Project 1",
-      description: "This is Project 1.",
-      link: "/my-projects/project1/page",
+      src:"/16BitGames.png",
+      title:"Com S 319 Final Project",
+      description:"16-Bit Shop is my team's final project using React JS. Developed over a week and a half improving upon our midterm concept 8-bit Shop.",
+      link : "/my-projects/16BitGames",
     },
     {
-      src: "/NextWebsite.png",
-      title: "Project 2",
-      description: "This is Project 2.",
-      link: "/my-projects/project2/page",
+      src:"/wizard309.png",
+          title:"Wizard 309",
+          description:"Explore and battle with friends in a online mutiplayer adventure game for android devices. (Best Project Award Winner). Built in a team of 4 as a semester long project for Com S 309",
+          link :"/my-projects/Wizard309",
     },
   
     // Add more projects here...

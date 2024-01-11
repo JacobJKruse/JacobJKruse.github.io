@@ -22,10 +22,10 @@ const Projects = () => {
           
         />
         <ProjectCard
-          src="/CardImage.png"
-          title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          link = "/my-projects/project2"
+          src="/wizard309.png"
+          title="Wizard 309"
+          description="Explore and battle with friends in a online mutiplayer adventure game for android devices. (Best Project Award Winner). Built in a team of 4 as a semester long project for Com S 309"
+          link = "/my-projects/Wizard309"
           
         />
         <ProjectCard
