@@ -9,7 +9,7 @@ const Page = () => {
       </h1>
       <div className="w-64 h-64 overflow-hidden rounded-lg border border-[#7042f861] bg-[#0300145e]">
   <Image
-    src="/aboutmespaceman.jpg"
+    src="/aboutmespaceman.png"
     alt="About me"
     width={400}
     height={400}
