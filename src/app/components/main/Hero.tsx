@@ -13,6 +13,7 @@ const Hero = () => {
   style={{ objectFit: 'cover', transform: 'translateY(-45%) rotate(180deg)' }}
 >
   <source src="/blackhole.webm" type="video/webm" />
+  <source src="/blackhole.mp4" type="video/mp4"></source>
 </video>
 
 
