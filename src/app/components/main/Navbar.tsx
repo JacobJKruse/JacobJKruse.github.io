@@ -72,9 +72,12 @@ const Navbar = () => {
               <Link
               key={link.name}
               href={link.link}
-              onClick={() => setisActive(link.name)}
+              onClick={() => {
+                setisActive(link.name);
+                setIsOpen(false);
+              }}
               >
-                <p  className="cursor-pointer">{link.name}</p>
+                <p  className="cursor-pointer text-white">{link.name}</p>
               </Link>
               )}
             </div>
@@ -87,9 +90,12 @@ const Navbar = () => {
               <Link
               key={link.name}
               href={link.link}
-              onClick={() => setisActive(link.name)}
+              onClick={() => {
+                setisActive(link.name);
+                setIsOpen(false);
+              }}
               >
-                <p  className="cursor-pointer">{link.name}</p>
+                <p  className="cursor-pointer text-white">{link.name}</p>
               </Link>
               )}
           </div>
