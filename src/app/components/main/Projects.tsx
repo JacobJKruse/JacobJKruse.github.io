@@ -29,8 +29,8 @@ const Projects = () => {
           
         />
         <ProjectCard
-          src="/SpaceWebsite.png"
-          title="Space Themed Website"
+          src="/16BitGames.png"
+          title="template not done"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           link = "/my-projects/project1"
           
